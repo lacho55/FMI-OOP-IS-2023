@@ -48,6 +48,32 @@ myfile.close();
 // След изпълнението на кода, програмата ще създаде текстов файл с име example.txt,
 // в който има един ред текст: Writing this to a file
 ```
+<h2> Друг пример:</h2>
+
+```c++
+#include <iostream>
+#include <fstream>
+
+int main() {
+    // Open file for writing
+    std::ofstream file("example.txt");
+
+    if (file.is_open()) {
+        // Write to file
+        file << "Hello, world!" << std::endl;
+
+        // Close file
+        file.close();
+
+        std::cout << "Data written to file successfully!" << std::endl;
+    } else {
+        std::cout << "Error opening file!" << std::endl;
+    }
+
+    return 0;
+}
+```
+
 
 
 Четене от файл
@@ -86,6 +112,32 @@ while( myfile.get(c) )
 myfile.close();
 
 // След изпълнението на кода, програмата ще отпечата съдържанието на example.txt на екрана
+```
+
+
+```c++
+#include <iostream>
+#include <fstream>
+
+int main() {
+    // Open file for writing
+    std::ofstream file("example.txt");
+
+    if (file.is_open()) {
+        // Write to file
+        file << "Hello, world!" << std::endl;
+
+        // Close file
+        file.close();
+
+        std::cout << "Data written to file successfully!" << std::endl;
+    } else {
+        std::cout << "Error opening file!" << std::endl;
+    }
+
+    return 0;
+}
+
 ```
 
 ### Режими на работа, указатели get и put
