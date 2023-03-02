@@ -5,7 +5,7 @@
 
  ```c++
 
- struckt Produc{
+ struct Product{
      char description[32];  // описание на изделие
      int partNum;           // номер на изделие
      double cost;           // цена на изделие
