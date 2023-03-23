@@ -49,7 +49,6 @@ int main() {
   <li> конструктор с параметри </li>
   <li> деструктор </li>
   <li> оператор за присвояване</li>
-    ```c++
     
     Object& operator=(const Object& other) {
         if (this != &other) {
@@ -58,7 +57,7 @@ int main() {
         }
         return *this;
     }
-    ```
+   
    <li>оператора за вход</li>
    <li>оператор за изход</li>
 </ul>
