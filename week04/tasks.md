@@ -49,6 +49,15 @@ int main() {
   <li> конструктор с параметри </li>
   <li> деструктор </li>
   <li> оператор за присвояване</li>
+    
+    Object& operator=(const Object& other) {
+        if (this != &other) {
+            destroy();
+            copy(other);
+        }
+        return *this;
+    }
+   
    <li>оператора за вход</li>
    <li>оператор за изход</li>
 </ul>
